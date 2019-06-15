@@ -1,0 +1,41 @@
+{
+  "name": "shot-tracker-BE",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "cross-env DB_ENV=testing jest --watchAll --verbose",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shot-tracker/shot-tracker-BE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shot-tracker/shot-tracker-BE/issues"
+  },
+  "homepage": "https://github.com/shot-tracker/shot-tracker-BE#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "helmet": "^3.18.0",
+    "jest": "^24.8.0",
+    "jwt-decode": "^2.2.0",
+    "knex": "^0.17.6",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
