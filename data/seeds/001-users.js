@@ -9,43 +9,53 @@ exports.seed = function(knex, Promise) {
       return knex("users").insert([
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         },
         {
           firstName: fake.name.firstName(),
-          lastName: fake.name.lastName()
+          lastName: fake.name.lastName(),
+          email: fake.internet.email()
         }
       ]);
     });
