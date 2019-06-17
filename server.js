@@ -8,7 +8,11 @@ server.use(helmet(), express.json(), cors());
 
 const errorHandler = require("./middleware/errorHandler");
 
-const Users = require("./models/usersModel");
+// Routes
+const usersRouter = require("./controllers/users");
+
+// Endpoints
+server.use("/api/users", usersRouter);
 
 server.get("/", async (req, res) => {
   res.status(200).json({
