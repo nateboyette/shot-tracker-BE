@@ -16,7 +16,7 @@ const prodDbConnection = process.env.DATABASE_URL || localPGConnection;
 module.exports = {
   development: {
     client: "pg",
-    connection: prodDbConnection,
+    connection: process.env.DEV_URL,
     migrations: {
       tableName: "knex_migrations",
       directory: "./data/migrations"
