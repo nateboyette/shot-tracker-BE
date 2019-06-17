@@ -20,16 +20,16 @@ exports.up = function(knex, Promise) {
       .notNullable()
       .unique();
 
-    // tbl
-    //   .foreign("company_id")
-    //   .references("company_id")
-    //   .inTable("companies")
-    //   .onDelete("CASCADE");
+    tbl
+      .foreign("company_id")
+      .references("company_id")
+      .inTable("companies")
+      .onDelete("CASCADE");
 
-    // tbl
-    //   .foreign("user_type_id")
-    //   .references("user_type_id")
-    //   .inTable("user_types");
+    tbl
+      .foreign("userType_id")
+      .references("userType_id")
+      .inTable("user_types");
   });
 };
 

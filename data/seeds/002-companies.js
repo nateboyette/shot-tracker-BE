@@ -30,38 +30,6 @@ exports.seed = function(knex, Promise) {
           city: fake.address.city(),
           state: fake.address.stateAbbr(),
           zip: fake.address.zipCode()
-        },
-        {
-          company_name: fake.company.companyName(),
-          street_number: fake.random.number(9999),
-          address: fake.address.streetName(),
-          city: fake.address.city(),
-          state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
-        },
-        {
-          company_name: fake.company.companyName(),
-          street_number: fake.random.number(9999),
-          address: fake.address.streetName(),
-          city: fake.address.city(),
-          state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
-        },
-        {
-          company_name: fake.company.companyName(),
-          street_number: fake.random.number(9999),
-          address: fake.address.streetName(),
-          city: fake.address.city(),
-          state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
-        },
-        {
-          company_name: fake.company.companyName(),
-          street_number: fake.random.number(9999),
-          address: fake.address.streetName(),
-          city: fake.address.city(),
-          state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
         }
       ]);
     });
