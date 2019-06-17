@@ -13,13 +13,11 @@ const Users = require("./models/usersModel");
 server.get("/", async (req, res) => {
   try {
     const users = await Users.getAllUsers();
-
-    console.log("USERS", users);
-    res.status(200).json(users);
+    res.status(200).json({ message: "It's working", users });
+    // res.send(`It's working`);
   } catch (error) {
     res.status(500).json({ message: "A network error occurred" });
   }
-  // res.send(`It's working`);
 });
 
 server.use(errorHandler);

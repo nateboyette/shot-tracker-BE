@@ -14,17 +14,17 @@ const localPGConnection = {
 const prodDbConnection = process.env.DATABASE_URL || localPGConnection;
 
 module.exports = {
-  development: {
-    client: "pg",
-    connection: process.env.DATABASE_URL,
-    migrations: {
-      tableName: "knex_migrations",
-      directory: "./data/migrations"
-    },
-    seeds: {
-      directory: "./data/seeds"
-    }
-  },
+  // development: {
+  //   client: "pg",
+  //   connection: process.env.DATABASE_URL,
+  //   migrations: {
+  //     tableName: "knex_migrations",
+  //     directory: "./data/migrations"
+  //   },
+  //   seeds: {
+  //     directory: "./data/seeds"
+  //   }
+  // },
 
   production: {
     client: "pg",
@@ -42,5 +42,3 @@ module.exports = {
     }
   }
 };
-
-//
