@@ -29,7 +29,8 @@ exports.up = function(knex, Promise) {
     tbl
       .foreign("userType_id")
       .references("userType_id")
-      .inTable("user_types");
+      .inTable("user_types")
+      .onDelete("CASCADE");
   });
 };
 
