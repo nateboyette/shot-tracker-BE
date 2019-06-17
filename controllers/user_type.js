@@ -1,11 +1,12 @@
 const router = require("express").Router();
 
-const Companies = require("../models/companiesModel");
+const UserTypes = require("../models/userTypesModel");
 
 router.get("/", async (req, res) => {
   try {
-    const companies = await Companies.getAllCompanies();
-    res.status(200).json(companies);
+    const userTypes = await UserTypes.getUserTypes();
+
+    res.status(200).json(userTypes);
   } catch (error) {
     res.status(500).json({ message: "A network error occurred" });
   }
