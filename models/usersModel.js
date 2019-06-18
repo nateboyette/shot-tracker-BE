@@ -5,5 +5,5 @@ module.exports = {
 };
 
 function getAllUsers() {
-  return db("users");
+  return db("users").select();
 }

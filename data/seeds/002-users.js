@@ -11,71 +11,99 @@ exports.seed = function(knex, Promise) {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 1,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
         },
         {
           firstName: fake.name.firstName(),
           lastName: fake.name.lastName(),
           email: fake.internet.email(),
-          userType_id: fake.random.number(3),
-          company_id: fake.random.number(3)
+          userType_id: 2,
+          company_id: 1
+        },
+        {
+          firstName: fake.name.firstName(),
+          lastName: fake.name.lastName(),
+          email: fake.internet.email(),
+          userType_id: 2,
+          company_id: 1
+        },
+        {
+          firstName: fake.name.firstName(),
+          lastName: fake.name.lastName(),
+          email: fake.internet.email(),
+          userType_id: 2,
+          company_id: 1
+        },
+        {
+          firstName: fake.name.firstName(),
+          lastName: fake.name.lastName(),
+          email: fake.internet.email(),
+          userType_id: 2,
+          company_id: 1
+        },
+        {
+          firstName: fake.name.firstName(),
+          lastName: fake.name.lastName(),
+          email: fake.internet.email(),
+          userType_id: 2,
+          company_id: 1
         }
       ]);
     });

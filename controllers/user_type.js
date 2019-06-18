@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const UserTypes = require("../models/userTypesModel");
+const UserTypes = require("../models/user_types_model");
 
 router.get("/", async (req, res) => {
   try {
