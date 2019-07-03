@@ -37,7 +37,7 @@ exports.up = function(knex, Promise) {
     tbl
       .foreign("shot_status_id")
       .references("status_id")
-      .inTable("shot_statuses")
+      .inTable("statuses")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
   });

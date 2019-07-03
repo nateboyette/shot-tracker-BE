@@ -34,7 +34,7 @@ exports.up = function(knex, Promise) {
     tbl
       .integer("userType_id")
       .unsigned()
-      .defaultTo(null);
+      .notNullable();
 
     tbl
       .foreign("userType_id")

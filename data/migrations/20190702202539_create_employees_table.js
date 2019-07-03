@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
       .primary();
 
     tbl
-      .integer("rate")
+      .decimal("rate")
       .unsigned()
       .defaultTo(null);
 

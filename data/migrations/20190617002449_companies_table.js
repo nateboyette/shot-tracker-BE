@@ -5,7 +5,10 @@ exports.up = function(knex, Promise) {
       .notNullable()
       .primary();
 
-    tbl.string("company_name", 255).notNullable();
+    tbl
+      .string("company_name", 255)
+      .notNullable()
+      .unique();
 
     tbl.string("street_number", 255).defaultTo(null);
 

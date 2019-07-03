@@ -1,6 +1,12 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("shot_assignments", tbl => {
     tbl
+      .increments("id")
+      .primary()
+      .notNullable()
+      .unsigned();
+
+    tbl
       .integer("shot_id")
       .notNullable()
       .unsigned();

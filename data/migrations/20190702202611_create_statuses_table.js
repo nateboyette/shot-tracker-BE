@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable("shot_statuses", tbl => {
+  return knex.schema.createTable("statuses", tbl => {
     tbl
       .increments("status_id")
       .primary()
@@ -13,5 +13,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists("shot_statuses");
+  return knex.schema.dropTableIfExists("statuses");
 };

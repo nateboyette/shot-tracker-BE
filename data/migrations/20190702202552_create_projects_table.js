@@ -9,6 +9,10 @@ exports.up = function(knex, Promise) {
 
     tbl.string("description", 255).defaultTo(null);
 
+    tbl.string("client_name", 255).defaultTo(null);
+    tbl.string("client_email", 255).defaultTo(null);
+    tbl.string("client_phone", 255).defaultTo(null);
+
     tbl
       .decimal("budget")
       .unsigned()
