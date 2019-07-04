@@ -32,6 +32,15 @@ exports.up = function(knex, Promise) {
       .inTable("statuses")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
+
+    tbl.integer("employee_id").notNullable();
+
+    tbl
+      .foreign("employee_id")
+      .references("employee_id")
+      .inTable("employees")
+      .onDelete("CASCADE")
+      .onUpdate("CASCADE");
   });
 };
 

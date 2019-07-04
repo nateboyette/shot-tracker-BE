@@ -10,12 +10,12 @@ exports.up = function(knex, Promise) {
       .notNullable()
       .unsigned();
 
-    tbl.integer("task_id").unsigned();
+    tbl.integer("shot_task_id").unsigned();
 
     tbl
-      .foreign("task_id")
-      .references("task_id")
-      .inTable("tasks")
+      .foreign("shot_task_id")
+      .references("id")
+      .inTable("shot_tasks")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
 
@@ -30,6 +30,8 @@ exports.up = function(knex, Promise) {
       .inTable("shots")
       .onDelete("CASCADE")
       .onUpdate("CASCADE");
+
+    tbl.string("note", 255).notNullable();
   });
 };
 

@@ -13,7 +13,8 @@ exports.up = function(knex, Promise) {
     tbl
       .string("user_id")
       .unsigned()
-      .notNullable();
+      .notNullable()
+      .unique();
 
     tbl
       .foreign("user_id")
