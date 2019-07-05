@@ -13,7 +13,8 @@ exports.seed = function(knex, Promise) {
           address: fake.address.streetName(),
           city: fake.address.city(),
           state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
+          zip: fake.address.zipCode(),
+          phone: fake.phone.phoneNumber()
         },
         {
           company_name: fake.company.companyName(),
@@ -21,7 +22,8 @@ exports.seed = function(knex, Promise) {
           address: fake.address.streetName(),
           city: fake.address.city(),
           state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
+          zip: fake.address.zipCode(),
+          phone: fake.phone.phoneNumber()
         },
         {
           company_name: fake.company.companyName(),
@@ -29,7 +31,8 @@ exports.seed = function(knex, Promise) {
           address: fake.address.streetName(),
           city: fake.address.city(),
           state: fake.address.stateAbbr(),
-          zip: fake.address.zipCode()
+          zip: fake.address.zipCode(),
+          phone: fake.phone.phoneNumber()
         }
       ]);
     });
